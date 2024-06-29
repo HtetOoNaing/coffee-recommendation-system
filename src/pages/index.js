@@ -1,5 +1,3 @@
-// pages/index.js
-
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import FilterSidebar from '../components/FilterSidebar';

@@ -1,5 +1,3 @@
-// components/Header.js
-
 const Header = () => (
   <header className="bg-[#38220f] text-white shadow-md sticky top-0 z-50">
     <div className="container mx-auto px-4 flex justify-between items-center">
