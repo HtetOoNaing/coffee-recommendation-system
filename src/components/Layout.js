@@ -1,9 +1,9 @@
 import Header from './Header';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, className }) => (
   <div className="bg-gray-100 min-h-screen">
     <Header />
-    <main className="container mx-auto px-4 py-6">
+    <main className={className}>
       {children}
     </main>
   </div>

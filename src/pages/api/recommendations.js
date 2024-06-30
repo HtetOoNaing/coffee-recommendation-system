@@ -11,23 +11,23 @@ export default function handler(req, res) {
       brand: 'Pop Pop',
       name: '3 in 1 Arabica Coffee',
       price: 15000,
-      thumbnail: 'hot-coffee-cup.jpeg',
+      thumbnail: 'images/hot-coffee-cup.jpeg',
       gram: 250,
     },
     {
       brand: 'Maymyo Fresh',
       name: 'Pure Coffee',
       price: 20000,
-      thumbnail: 'hot-coffee-cup.jpeg',
+      thumbnail: 'images/hot-coffee-cup.jpeg',
       gram: 500,
     },
     {
       brand: 'Maymyo Fresh',
       name: '2 in 1 Brown Version',
       price: 20000,
-      thumbnail: 'hot-coffee-cup.jpeg',
+      thumbnail: 'images/hot-coffee-cup.jpeg',
       gram: 500,
-    },
+    }
   ];
 
   // Apply filtering logic here based on the filters received in req.body

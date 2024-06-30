@@ -97,7 +97,7 @@ body {
 }
 
 .nav-link.active {
-  background-color: #ff0042;
+  color: #dbc1ac;
 }
 
 .image-wrapper {
