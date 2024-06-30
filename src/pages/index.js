@@ -1,4 +1,6 @@
 import Layout from '@/components/Layout';
+import { features } from '@/utils/jsonData';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -19,30 +21,24 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        {/* <section className="py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold">Why You'll Love Our Recommendations</h2>
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold">Why You'll Love Our Recommendations</h2>
             <p className="text-lg mt-4">Explore the benefits of using our AI-powered coffee recommendation system.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white shadow-md p-6 rounded-lg">
-              <Image src="/images/personalized.jpg" alt="Personalized Recommendations" width={400} height={300} className="rounded-lg mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Personalized Recommendations</h3>
-              <p>Our AI analyzes your preferences to suggest the best coffee for you.</p>
-            </div>
-            <div className="bg-white shadow-md p-6 rounded-lg">
-              <Image src="/images/flavors.jpg" alt="Discover New Flavors" width={400} height={300} className="rounded-lg mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Discover New Flavors</h3>
-              <p>Explore a variety of coffee flavors and find your new favorite.</p>
-            </div>
-            <div className="bg-white shadow-md p-6 rounded-lg">
-              <Image src="/images/community.jpg" alt="Join Our Community" width={400} height={300} className="rounded-lg mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Join Our Community</h3>
-              <p>Share your coffee experiences and learn from other coffee enthusiasts.</p>
-            </div>
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            {features.map((feature, i) => (
+              <div key={i} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <Image src={feature.image} alt={feature.title} width={400} height={300} className="w-full h-56 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2">{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        </section> */}
+        </section>
       </main>
     </Layout>
   );
