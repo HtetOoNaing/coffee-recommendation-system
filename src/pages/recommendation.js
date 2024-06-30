@@ -2,9 +2,10 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import FilterSidebar from '../components/FilterSidebar';
 import CoffeeCard from '../components/CoffeeCard';
+import { recommendations as recommendationsArray } from '@/utils/jsonData';
 
 export default function Recommendation() {
-  const [recommendations, setRecommendations] = useState([]);
+  const [recommendations, setRecommendations] = useState(recommendationsArray);
 
   const handleRecommend = async (filters) => {
     try {

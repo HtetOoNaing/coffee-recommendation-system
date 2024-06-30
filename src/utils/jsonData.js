@@ -1,3 +1,27 @@
+export const recommendations = [
+  {
+    brand: 'Pop Pop',
+    name: '3 in 1 Arabica Coffee',
+    price: 15000,
+    thumbnail: 'images/hot-coffee-cup.jpeg',
+    gram: 250,
+  },
+  {
+    brand: 'Maymyo Fresh',
+    name: 'Pure Coffee',
+    price: 20000,
+    thumbnail: 'images/hot-coffee-cup.jpeg',
+    gram: 500,
+  },
+  {
+    brand: 'Maymyo Fresh',
+    name: '2 in 1 Brown Version',
+    price: 20000,
+    thumbnail: 'images/hot-coffee-cup.jpeg',
+    gram: 500,
+  }
+];
+
 export const features = [
   {
     image: '/images/personalized.avif',
