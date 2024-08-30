@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const CoffeeCard = ({ brand, name, price, thumbnail, gram }) => (
   <div className="coffee-card relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
     <div className="image-wrapper relative overflow-hidden">
